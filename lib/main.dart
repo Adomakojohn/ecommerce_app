@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_app/screens/detailsscreen.dart';
-import 'package:furniture_app/utils/circles.dart';
+import 'package:furniture_app/screens/homescreen.dart';
 
-import 'screens/homescreen.dart';
 
 void main (){
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DetailsPage(),
+      home: HomePage(),
     );
   }
 }
