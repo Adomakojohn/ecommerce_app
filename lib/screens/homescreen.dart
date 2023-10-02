@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      body: SingleChildScrollView(physics:const  BouncingScrollPhysics(),
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(15),
@@ -102,9 +102,9 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   height: 25,
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       "Collections",
                       style:
@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Container(
                   height: 150,
-                  child: ListView.builder(
+                  child: ListView.builder( physics:const  BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     itemCount: _collections.length,
                     itemBuilder: (context, index) {
